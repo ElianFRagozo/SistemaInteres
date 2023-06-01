@@ -184,12 +184,21 @@ namespace Presentacion
             if (cmbTipoInteres.Text == "Mensual")
             {
                 n = 12;
-            } else if (cmbTipoInteres.Text=="Bimensual")
+            }
+            else if (cmbTipoInteres.Text == "Bimensual")
             {
                 n = 6;
             }
+            else if (cmbTipoInteres.Text == "Trimestral")
+            {
+                n = 4;
+            }
+            else if (cmbTipoInteres.Text == "Anual")
+            {
+                n = 1;
+            }
 
-            double valor_futuro = valor_presente * Math.Pow((1 + tipo_interes), n);
+            double valor_futuro = valor_presente * Math.Pow((1 + tipo_interes / n), tiempo * n);
             txtResultado.Text = valor_futuro.ToString("N2");
         }
 
@@ -198,19 +207,50 @@ namespace Presentacion
             double valor_futuro = double.Parse(txtCapitalFinal.Text);
             double tipo_interes = double.Parse(txtTasaInteres.Text) / 100;
             double tiempo = double.Parse(txtTiempo.Text);
+            int n = 0;
 
-            double valor_presente = valor_futuro * Math.Pow((1 + tipo_interes), tiempo);
+            if (cmbTipoInteres.Text == "Mensual")
+            {
+                n = 12;
+            }
+            else if (cmbTipoInteres.Text == "Bimensual")
+            {
+                n = 6;
+            }
+            else if (cmbTipoInteres.Text == "Trimestral")
+            {
+                n = 4;
+            }
+            else if (cmbTipoInteres.Text == "Anual")
+            {
+                n = 1;
+            }
+
+            double valor_presente = valor_futuro / Math.Pow((1 + tipo_interes / n), tiempo * n);
             txtResultado.Text = valor_presente.ToString("N2");
         }
+
+        private void calcular_tasa_de_interes()
+        {
+            double valor_futuro = double.Parse(txtCapitalFinal.Text);
+            double valor_presente = double.Parse(txtCapitalInicial.Text);
+            double tiempo = double.Parse(txtTiempo.Text);
+
+            double tasa_interes = Math.Pow(valor_futuro / valor_presente, 1 / tiempo) - 1;
+            txtResultado.Text = tasa_interes.ToString("P2");
+        }
+
 
         private void calcular_tiempo_de_negociacion()
         {
             double valor_futuro = double.Parse(txtCapitalFinal.Text);
+            double valor_presente = double.Parse(txtCapitalInicial.Text);
             double tipo_interes = double.Parse(txtTasaInteres.Text) / 100;
-            double tiempo = double.Parse(txtTiempo.Text);
 
-            double valor_presente = valor_futuro * Math.Pow((1 + tipo_interes), tiempo);
-            txtResultado.Text = valor_presente.ToString("N2");
+            double tiempo = Math.Log(valor_futuro / valor_presente) / Math.Log(1 + tipo_interes);
+
+            int tiempoRedondeado = (int)Math.Floor(tiempo);
+            txtResultado.Text = tiempoRedondeado.ToString();
         }
 
 
@@ -257,20 +297,20 @@ namespace Presentacion
                         }
                     }
                     break;
-                /*case "Tasa de Interes":
-                    if (txtCapitalInicial.Text == "" || txtTipoInteres.Text == "" || txtTiempo.Text == "" || cmbTiempo.Text == "Seleccionar")
+                case "Tasa de Interes":
+                    if (txtCapitalInicial.Text == "" || txtCapitalFinal.Text == "" || txtTiempo.Text == "" || cmbTiempo.Text == "Seleccionar")
 
                     {
                         MessageWarning("Un campo se encuentra vacío");
                     }
                     else
                     {
-                        if (validarInputSimpleTasa(txtCapitalInicial.Text, txtTiempo.Text, txtCapitalFinal.Text))
+                        if (validarInputCompuestoInteres(txtCapitalInicial.Text, txtTiempo.Text, txtCapitalFinal.Text))
                         {
                             calcular_tasa_de_interes();
                         }
                     }
-                    break;*/
+                    break;
                 case "Tiempo de Negociacion":
                     if (txtCapitalInicial.Text == "" || txtTasaInteres.Text == "" || txtCapitalFinal.Text == "" || cmbTiempo.Text == "Seleccionar" || cmbTipoInteres.Text == "Seleccionar" )
                     {

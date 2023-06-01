@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Compuesto));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnPreguntaValorFuturo = new System.Windows.Forms.Button();
+            this.btnPreguntaTiempo = new System.Windows.Forms.Button();
+            this.btnPreguntaTipoInteres = new System.Windows.Forms.Button();
+            this.btnPreguntaValorPresente = new System.Windows.Forms.Button();
             this.cmbTipoInteres = new System.Windows.Forms.ComboBox();
             this.txtCapitalFinal = new System.Windows.Forms.TextBox();
             this.lblDolarCF = new System.Windows.Forms.Label();
@@ -63,10 +67,6 @@
             this.panelFormula = new System.Windows.Forms.Panel();
             this.lblResultFormula = new System.Windows.Forms.Label();
             this.lblFormula = new System.Windows.Forms.Label();
-            this.btnPreguntaValorPresente = new System.Windows.Forms.Button();
-            this.btnPreguntaTipoInteres = new System.Windows.Forms.Button();
-            this.btnPreguntaTiempo = new System.Windows.Forms.Button();
-            this.btnPreguntaValorFuturo = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -95,10 +95,71 @@
             this.panel4.Controls.Add(this.lblTipoInteres);
             this.panel4.Controls.Add(this.lblCapitalInicial);
             this.panel4.Controls.Add(this.shapeContainer3);
-            this.panel4.Location = new System.Drawing.Point(186, 177);
+            this.panel4.Location = new System.Drawing.Point(248, 218);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(414, 178);
+            this.panel4.Size = new System.Drawing.Size(551, 219);
             this.panel4.TabIndex = 61;
+            // 
+            // btnPreguntaValorFuturo
+            // 
+            this.btnPreguntaValorFuturo.BackColor = System.Drawing.Color.Navy;
+            this.btnPreguntaValorFuturo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreguntaValorFuturo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreguntaValorFuturo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreguntaValorFuturo.ForeColor = System.Drawing.Color.White;
+            this.btnPreguntaValorFuturo.Location = new System.Drawing.Point(201, 165);
+            this.btnPreguntaValorFuturo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPreguntaValorFuturo.Name = "btnPreguntaValorFuturo";
+            this.btnPreguntaValorFuturo.Size = new System.Drawing.Size(33, 42);
+            this.btnPreguntaValorFuturo.TabIndex = 42;
+            this.btnPreguntaValorFuturo.Text = "?";
+            this.btnPreguntaValorFuturo.UseVisualStyleBackColor = false;
+            // 
+            // btnPreguntaTiempo
+            // 
+            this.btnPreguntaTiempo.BackColor = System.Drawing.Color.Navy;
+            this.btnPreguntaTiempo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreguntaTiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreguntaTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreguntaTiempo.ForeColor = System.Drawing.Color.White;
+            this.btnPreguntaTiempo.Location = new System.Drawing.Point(201, 113);
+            this.btnPreguntaTiempo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPreguntaTiempo.Name = "btnPreguntaTiempo";
+            this.btnPreguntaTiempo.Size = new System.Drawing.Size(33, 42);
+            this.btnPreguntaTiempo.TabIndex = 41;
+            this.btnPreguntaTiempo.Text = "?";
+            this.btnPreguntaTiempo.UseVisualStyleBackColor = false;
+            // 
+            // btnPreguntaTipoInteres
+            // 
+            this.btnPreguntaTipoInteres.BackColor = System.Drawing.Color.Navy;
+            this.btnPreguntaTipoInteres.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreguntaTipoInteres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreguntaTipoInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreguntaTipoInteres.ForeColor = System.Drawing.Color.White;
+            this.btnPreguntaTipoInteres.Location = new System.Drawing.Point(201, 60);
+            this.btnPreguntaTipoInteres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPreguntaTipoInteres.Name = "btnPreguntaTipoInteres";
+            this.btnPreguntaTipoInteres.Size = new System.Drawing.Size(33, 42);
+            this.btnPreguntaTipoInteres.TabIndex = 40;
+            this.btnPreguntaTipoInteres.Text = "?";
+            this.btnPreguntaTipoInteres.UseVisualStyleBackColor = false;
+            // 
+            // btnPreguntaValorPresente
+            // 
+            this.btnPreguntaValorPresente.BackColor = System.Drawing.Color.Navy;
+            this.btnPreguntaValorPresente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreguntaValorPresente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreguntaValorPresente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreguntaValorPresente.ForeColor = System.Drawing.Color.White;
+            this.btnPreguntaValorPresente.Location = new System.Drawing.Point(201, 7);
+            this.btnPreguntaValorPresente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPreguntaValorPresente.Name = "btnPreguntaValorPresente";
+            this.btnPreguntaValorPresente.Size = new System.Drawing.Size(33, 42);
+            this.btnPreguntaValorPresente.TabIndex = 39;
+            this.btnPreguntaValorPresente.Text = "?";
+            this.btnPreguntaValorPresente.UseVisualStyleBackColor = false;
             // 
             // cmbTipoInteres
             // 
@@ -109,10 +170,13 @@
             this.cmbTipoInteres.FormattingEnabled = true;
             this.cmbTipoInteres.Items.AddRange(new object[] {
             "Mensual",
-            "Bimensual"});
-            this.cmbTipoInteres.Location = new System.Drawing.Point(255, 54);
+            "Bimensual",
+            "Trimestral",
+            "Anual"});
+            this.cmbTipoInteres.Location = new System.Drawing.Point(340, 66);
+            this.cmbTipoInteres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTipoInteres.Name = "cmbTipoInteres";
-            this.cmbTipoInteres.Size = new System.Drawing.Size(130, 28);
+            this.cmbTipoInteres.Size = new System.Drawing.Size(172, 33);
             this.cmbTipoInteres.TabIndex = 38;
             this.cmbTipoInteres.Text = "Seleccionar";
             // 
@@ -122,9 +186,10 @@
             this.txtCapitalFinal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCapitalFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapitalFinal.ForeColor = System.Drawing.Color.Navy;
-            this.txtCapitalFinal.Location = new System.Drawing.Point(209, 138);
+            this.txtCapitalFinal.Location = new System.Drawing.Point(279, 170);
+            this.txtCapitalFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCapitalFinal.Name = "txtCapitalFinal";
-            this.txtCapitalFinal.Size = new System.Drawing.Size(176, 19);
+            this.txtCapitalFinal.Size = new System.Drawing.Size(235, 23);
             this.txtCapitalFinal.TabIndex = 36;
             this.txtCapitalFinal.Text = "0";
             // 
@@ -133,9 +198,10 @@
             this.lblDolarCF.AutoSize = true;
             this.lblDolarCF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDolarCF.ForeColor = System.Drawing.Color.Navy;
-            this.lblDolarCF.Location = new System.Drawing.Point(184, 137);
+            this.lblDolarCF.Location = new System.Drawing.Point(245, 169);
+            this.lblDolarCF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDolarCF.Name = "lblDolarCF";
-            this.lblDolarCF.Size = new System.Drawing.Size(19, 20);
+            this.lblDolarCF.Size = new System.Drawing.Size(24, 25);
             this.lblDolarCF.TabIndex = 35;
             this.lblDolarCF.Text = "$";
             // 
@@ -144,9 +210,10 @@
             this.lblCapitalFinal.AutoSize = true;
             this.lblCapitalFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCapitalFinal.ForeColor = System.Drawing.Color.Navy;
-            this.lblCapitalFinal.Location = new System.Drawing.Point(16, 138);
+            this.lblCapitalFinal.Location = new System.Drawing.Point(21, 170);
+            this.lblCapitalFinal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCapitalFinal.Name = "lblCapitalFinal";
-            this.lblCapitalFinal.Size = new System.Drawing.Size(114, 20);
+            this.lblCapitalFinal.Size = new System.Drawing.Size(138, 25);
             this.lblCapitalFinal.TabIndex = 34;
             this.lblCapitalFinal.Text = "Valor Futuro:";
             // 
@@ -155,9 +222,10 @@
             this.lblDolarCI.AutoSize = true;
             this.lblDolarCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDolarCI.ForeColor = System.Drawing.Color.Navy;
-            this.lblDolarCI.Location = new System.Drawing.Point(182, 13);
+            this.lblDolarCI.Location = new System.Drawing.Point(243, 16);
+            this.lblDolarCI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDolarCI.Name = "lblDolarCI";
-            this.lblDolarCI.Size = new System.Drawing.Size(19, 20);
+            this.lblDolarCI.Size = new System.Drawing.Size(24, 25);
             this.lblDolarCI.TabIndex = 27;
             this.lblDolarCI.Text = "$";
             // 
@@ -174,9 +242,10 @@
             "Trimestres",
             "Semestres",
             "Años"});
-            this.cmbTiempo.Location = new System.Drawing.Point(229, 91);
+            this.cmbTiempo.Location = new System.Drawing.Point(305, 112);
+            this.cmbTiempo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTiempo.Name = "cmbTiempo";
-            this.cmbTiempo.Size = new System.Drawing.Size(157, 28);
+            this.cmbTiempo.Size = new System.Drawing.Size(208, 33);
             this.cmbTiempo.TabIndex = 26;
             this.cmbTiempo.Text = "Seleccionar";
             // 
@@ -186,9 +255,10 @@
             this.txtTasaInteres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTasaInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTasaInteres.ForeColor = System.Drawing.Color.Navy;
-            this.txtTasaInteres.Location = new System.Drawing.Point(188, 57);
+            this.txtTasaInteres.Location = new System.Drawing.Point(251, 70);
+            this.txtTasaInteres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTasaInteres.Name = "txtTasaInteres";
-            this.txtTasaInteres.Size = new System.Drawing.Size(30, 19);
+            this.txtTasaInteres.Size = new System.Drawing.Size(40, 23);
             this.txtTasaInteres.TabIndex = 25;
             this.txtTasaInteres.Text = "0";
             // 
@@ -197,9 +267,10 @@
             this.lblPorcentajeTI.AutoSize = true;
             this.lblPorcentajeTI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcentajeTI.ForeColor = System.Drawing.Color.Navy;
-            this.lblPorcentajeTI.Location = new System.Drawing.Point(228, 57);
+            this.lblPorcentajeTI.Location = new System.Drawing.Point(304, 70);
+            this.lblPorcentajeTI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPorcentajeTI.Name = "lblPorcentajeTI";
-            this.lblPorcentajeTI.Size = new System.Drawing.Size(24, 20);
+            this.lblPorcentajeTI.Size = new System.Drawing.Size(31, 25);
             this.lblPorcentajeTI.TabIndex = 19;
             this.lblPorcentajeTI.Text = "%";
             // 
@@ -209,9 +280,10 @@
             this.txtTiempo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTiempo.ForeColor = System.Drawing.Color.Navy;
-            this.txtTiempo.Location = new System.Drawing.Point(187, 96);
+            this.txtTiempo.Location = new System.Drawing.Point(249, 118);
+            this.txtTiempo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTiempo.Name = "txtTiempo";
-            this.txtTiempo.Size = new System.Drawing.Size(36, 19);
+            this.txtTiempo.Size = new System.Drawing.Size(48, 23);
             this.txtTiempo.TabIndex = 17;
             this.txtTiempo.Text = "0";
             // 
@@ -221,9 +293,10 @@
             this.txtCapitalInicial.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCapitalInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapitalInicial.ForeColor = System.Drawing.Color.Navy;
-            this.txtCapitalInicial.Location = new System.Drawing.Point(204, 13);
+            this.txtCapitalInicial.Location = new System.Drawing.Point(272, 16);
+            this.txtCapitalInicial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCapitalInicial.Name = "txtCapitalInicial";
-            this.txtCapitalInicial.Size = new System.Drawing.Size(182, 19);
+            this.txtCapitalInicial.Size = new System.Drawing.Size(243, 23);
             this.txtCapitalInicial.TabIndex = 16;
             this.txtCapitalInicial.Text = "0";
             // 
@@ -232,9 +305,10 @@
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTiempo.ForeColor = System.Drawing.Color.Navy;
-            this.lblTiempo.Location = new System.Drawing.Point(15, 97);
+            this.lblTiempo.Location = new System.Drawing.Point(20, 119);
+            this.lblTiempo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(72, 20);
+            this.lblTiempo.Size = new System.Drawing.Size(91, 25);
             this.lblTiempo.TabIndex = 11;
             this.lblTiempo.Text = "Tiempo:";
             // 
@@ -243,9 +317,10 @@
             this.lblTipoInteres.AutoSize = true;
             this.lblTipoInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoInteres.ForeColor = System.Drawing.Color.Navy;
-            this.lblTipoInteres.Location = new System.Drawing.Point(15, 57);
+            this.lblTipoInteres.Location = new System.Drawing.Point(20, 70);
+            this.lblTipoInteres.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoInteres.Name = "lblTipoInteres";
-            this.lblTipoInteres.Size = new System.Drawing.Size(135, 20);
+            this.lblTipoInteres.Size = new System.Drawing.Size(164, 25);
             this.lblTipoInteres.TabIndex = 10;
             this.lblTipoInteres.Text = "Tipo de Interes:";
             // 
@@ -254,9 +329,10 @@
             this.lblCapitalInicial.AutoSize = true;
             this.lblCapitalInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCapitalInicial.ForeColor = System.Drawing.Color.Navy;
-            this.lblCapitalInicial.Location = new System.Drawing.Point(16, 12);
+            this.lblCapitalInicial.Location = new System.Drawing.Point(21, 15);
+            this.lblCapitalInicial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCapitalInicial.Name = "lblCapitalInicial";
-            this.lblCapitalInicial.Size = new System.Drawing.Size(133, 20);
+            this.lblCapitalInicial.Size = new System.Drawing.Size(162, 25);
             this.lblCapitalInicial.TabIndex = 8;
             this.lblCapitalInicial.Text = "Valor Presente:";
             // 
@@ -270,7 +346,7 @@
             this.lineTiempo,
             this.lineTI,
             this.lineCI});
-            this.shapeContainer3.Size = new System.Drawing.Size(412, 176);
+            this.shapeContainer3.Size = new System.Drawing.Size(549, 217);
             this.shapeContainer3.TabIndex = 37;
             this.shapeContainer3.TabStop = false;
             // 
@@ -316,9 +392,10 @@
             this.panel3.Controls.Add(this.lblResultado);
             this.panel3.Controls.Add(this.txtResultado);
             this.panel3.Controls.Add(this.shapeContainer2);
-            this.panel3.Location = new System.Drawing.Point(186, 473);
+            this.panel3.Location = new System.Drawing.Point(248, 582);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(412, 68);
+            this.panel3.Size = new System.Drawing.Size(549, 83);
             this.panel3.TabIndex = 60;
             // 
             // lblResultado
@@ -326,9 +403,10 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.ForeColor = System.Drawing.Color.Navy;
-            this.lblResultado.Location = new System.Drawing.Point(18, 22);
+            this.lblResultado.Location = new System.Drawing.Point(24, 27);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(96, 20);
+            this.lblResultado.Size = new System.Drawing.Size(115, 25);
             this.lblResultado.TabIndex = 29;
             this.lblResultado.Text = "Resultado:";
             // 
@@ -339,9 +417,10 @@
             this.txtResultado.Enabled = false;
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.ForeColor = System.Drawing.Color.Navy;
-            this.txtResultado.Location = new System.Drawing.Point(165, 19);
+            this.txtResultado.Location = new System.Drawing.Point(220, 23);
+            this.txtResultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(213, 19);
+            this.txtResultado.Size = new System.Drawing.Size(284, 23);
             this.txtResultado.TabIndex = 30;
             this.txtResultado.Text = "0";
             // 
@@ -352,7 +431,7 @@
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape5});
-            this.shapeContainer2.Size = new System.Drawing.Size(410, 66);
+            this.shapeContainer2.Size = new System.Drawing.Size(547, 81);
             this.shapeContainer2.TabIndex = 32;
             this.shapeContainer2.TabStop = false;
             // 
@@ -370,9 +449,10 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.cmbCalcular);
             this.panel2.Controls.Add(this.lblCalcular);
-            this.panel2.Location = new System.Drawing.Point(186, 85);
+            this.panel2.Location = new System.Drawing.Point(248, 105);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(413, 68);
+            this.panel2.Size = new System.Drawing.Size(550, 83);
             this.panel2.TabIndex = 59;
             // 
             // cmbCalcular
@@ -387,9 +467,10 @@
             "Valor Presente",
             "Tasa de Interes",
             "Tiempo de Negociacion"});
-            this.cmbCalcular.Location = new System.Drawing.Point(167, 21);
+            this.cmbCalcular.Location = new System.Drawing.Point(223, 26);
+            this.cmbCalcular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbCalcular.Name = "cmbCalcular";
-            this.cmbCalcular.Size = new System.Drawing.Size(219, 28);
+            this.cmbCalcular.Size = new System.Drawing.Size(291, 33);
             this.cmbCalcular.TabIndex = 33;
             this.cmbCalcular.Text = "Seleccionar";
             this.cmbCalcular.SelectedValueChanged += new System.EventHandler(this.cmbCalcular_SelectedValueChanged);
@@ -399,9 +480,10 @@
             this.lblCalcular.AutoSize = true;
             this.lblCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalcular.ForeColor = System.Drawing.Color.Navy;
-            this.lblCalcular.Location = new System.Drawing.Point(12, 24);
+            this.lblCalcular.Location = new System.Drawing.Point(16, 30);
+            this.lblCalcular.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCalcular.Name = "lblCalcular";
-            this.lblCalcular.Size = new System.Drawing.Size(137, 20);
+            this.lblCalcular.Size = new System.Drawing.Size(170, 25);
             this.lblCalcular.TabIndex = 32;
             this.lblCalcular.Text = "Quiero Calcular:";
             // 
@@ -414,9 +496,10 @@
             this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
-            this.btnReset.Location = new System.Drawing.Point(186, 645);
+            this.btnReset.Location = new System.Drawing.Point(248, 794);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(410, 47);
+            this.btnReset.Size = new System.Drawing.Size(547, 58);
             this.btnReset.TabIndex = 63;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click_1);
@@ -430,9 +513,10 @@
             this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Image = ((System.Drawing.Image)(resources.GetObject("btnCalcular.Image")));
-            this.btnCalcular.Location = new System.Drawing.Point(186, 575);
+            this.btnCalcular.Location = new System.Drawing.Point(248, 708);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(412, 47);
+            this.btnCalcular.Size = new System.Drawing.Size(549, 58);
             this.btnCalcular.TabIndex = 62;
             this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
@@ -442,9 +526,10 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(29, 9);
+            this.lblTitle.Location = new System.Drawing.Point(39, 11);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(352, 33);
+            this.lblTitle.Size = new System.Drawing.Size(447, 42);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "INTERES COMPUESTO";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
@@ -453,9 +538,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Location = new System.Drawing.Point(187, 15);
+            this.panel1.Location = new System.Drawing.Point(249, 18);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(414, 49);
+            this.panel1.Size = new System.Drawing.Size(552, 60);
             this.panel1.TabIndex = 64;
             // 
             // panelFormula
@@ -463,9 +549,10 @@
             this.panelFormula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFormula.Controls.Add(this.lblResultFormula);
             this.panelFormula.Controls.Add(this.lblFormula);
-            this.panelFormula.Location = new System.Drawing.Point(186, 384);
+            this.panelFormula.Location = new System.Drawing.Point(248, 473);
+            this.panelFormula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFormula.Name = "panelFormula";
-            this.panelFormula.Size = new System.Drawing.Size(413, 60);
+            this.panelFormula.Size = new System.Drawing.Size(550, 73);
             this.panelFormula.TabIndex = 65;
             // 
             // lblResultFormula
@@ -473,9 +560,10 @@
             this.lblResultFormula.AutoSize = true;
             this.lblResultFormula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultFormula.ForeColor = System.Drawing.Color.Navy;
-            this.lblResultFormula.Location = new System.Drawing.Point(159, 19);
+            this.lblResultFormula.Location = new System.Drawing.Point(212, 23);
+            this.lblResultFormula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultFormula.Name = "lblResultFormula";
-            this.lblResultFormula.Size = new System.Drawing.Size(0, 20);
+            this.lblResultFormula.Size = new System.Drawing.Size(0, 25);
             this.lblResultFormula.TabIndex = 34;
             // 
             // lblFormula
@@ -483,74 +571,19 @@
             this.lblFormula.AutoSize = true;
             this.lblFormula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFormula.ForeColor = System.Drawing.Color.Navy;
-            this.lblFormula.Location = new System.Drawing.Point(15, 19);
+            this.lblFormula.Location = new System.Drawing.Point(20, 23);
+            this.lblFormula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFormula.Name = "lblFormula";
-            this.lblFormula.Size = new System.Drawing.Size(79, 20);
+            this.lblFormula.Size = new System.Drawing.Size(97, 25);
             this.lblFormula.TabIndex = 33;
             this.lblFormula.Text = "Formula:";
             // 
-            // btnPreguntaValorPresente
-            // 
-            this.btnPreguntaValorPresente.BackColor = System.Drawing.Color.Navy;
-            this.btnPreguntaValorPresente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPreguntaValorPresente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPreguntaValorPresente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreguntaValorPresente.ForeColor = System.Drawing.Color.White;
-            this.btnPreguntaValorPresente.Location = new System.Drawing.Point(151, 6);
-            this.btnPreguntaValorPresente.Name = "btnPreguntaValorPresente";
-            this.btnPreguntaValorPresente.Size = new System.Drawing.Size(25, 34);
-            this.btnPreguntaValorPresente.TabIndex = 39;
-            this.btnPreguntaValorPresente.Text = "?";
-            this.btnPreguntaValorPresente.UseVisualStyleBackColor = false;
-            // 
-            // btnPreguntaTipoInteres
-            // 
-            this.btnPreguntaTipoInteres.BackColor = System.Drawing.Color.Navy;
-            this.btnPreguntaTipoInteres.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPreguntaTipoInteres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPreguntaTipoInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreguntaTipoInteres.ForeColor = System.Drawing.Color.White;
-            this.btnPreguntaTipoInteres.Location = new System.Drawing.Point(151, 49);
-            this.btnPreguntaTipoInteres.Name = "btnPreguntaTipoInteres";
-            this.btnPreguntaTipoInteres.Size = new System.Drawing.Size(25, 34);
-            this.btnPreguntaTipoInteres.TabIndex = 40;
-            this.btnPreguntaTipoInteres.Text = "?";
-            this.btnPreguntaTipoInteres.UseVisualStyleBackColor = false;
-            // 
-            // btnPreguntaTiempo
-            // 
-            this.btnPreguntaTiempo.BackColor = System.Drawing.Color.Navy;
-            this.btnPreguntaTiempo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPreguntaTiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPreguntaTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreguntaTiempo.ForeColor = System.Drawing.Color.White;
-            this.btnPreguntaTiempo.Location = new System.Drawing.Point(151, 92);
-            this.btnPreguntaTiempo.Name = "btnPreguntaTiempo";
-            this.btnPreguntaTiempo.Size = new System.Drawing.Size(25, 34);
-            this.btnPreguntaTiempo.TabIndex = 41;
-            this.btnPreguntaTiempo.Text = "?";
-            this.btnPreguntaTiempo.UseVisualStyleBackColor = false;
-            // 
-            // btnPreguntaValorFuturo
-            // 
-            this.btnPreguntaValorFuturo.BackColor = System.Drawing.Color.Navy;
-            this.btnPreguntaValorFuturo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPreguntaValorFuturo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPreguntaValorFuturo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreguntaValorFuturo.ForeColor = System.Drawing.Color.White;
-            this.btnPreguntaValorFuturo.Location = new System.Drawing.Point(151, 134);
-            this.btnPreguntaValorFuturo.Name = "btnPreguntaValorFuturo";
-            this.btnPreguntaValorFuturo.Size = new System.Drawing.Size(25, 34);
-            this.btnPreguntaValorFuturo.TabIndex = 42;
-            this.btnPreguntaValorFuturo.Text = "?";
-            this.btnPreguntaValorFuturo.UseVisualStyleBackColor = false;
-            // 
             // Compuesto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(797, 720);
+            this.ClientSize = new System.Drawing.Size(1063, 886);
             this.Controls.Add(this.panelFormula);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnReset);
@@ -559,6 +592,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Compuesto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pasajero";
